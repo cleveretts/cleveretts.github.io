@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -7,8 +8,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -18,7 +21,67 @@ header {
     border-bottom: 2px solid #ddd;
 }
 
+/* My Name */ /* I know im not a brand but I like the class name */
 .brand-name {
     color: #333237;
     font-size: 2rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Navigation Items */
+nav ul li {
+    margin-left: 20px;
+}
+
+/* Navigation Links */
+nav ul li a {
+    color: #333237;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-size: 1rem;
+}
+
+/* Navigation Links Hover */
+nav ul li a:hover {
+    color: #555;
+}
+
+/* Pie Chart */
+.piechart {
+    background-image: conic-gradient(
+        #B5DDD1 0deg 120deg,          /* Teaching */
+        #D7E7A9 120deg 200deg,   /* Research */
+        #D3C0F9 200deg 240deg,      /* Service */
+        #F99A9C 240deg 280deg,     /* Diversity */
+        #FDBCCF 280deg 360deg      /* Professional Development */
+    );
+    display: block;
+    position: relative;
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+/* Pie Frame */
+.pieframe,
+.piechart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pie Chart Text */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
 }
